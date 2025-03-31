@@ -6,7 +6,6 @@ class Solution(object):
         pair_sums = []
         for i in range(len(weights) - 1):
             pair_sums.append(weights[i] + weights[i + 1])
-        
         pair_sums.sort()
         
         min_score = sum(pair_sums[:k-1])
